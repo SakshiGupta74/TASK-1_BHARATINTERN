@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sakshi.css">
+    <title>portfolio-Sakshi</title>
+    <script src="https://kit.fontawesome.com/f4d7c615fd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+     <div id="progress">
+      <a  class="scroll" href="#">  <i class="fa-solid fa-arrow-up"></i></a>
+     </div>
+
+    <div class="main">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header" class="home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+
+                </ul>
+            </nav>
+        </div>
+            <!------>
+            <div class="container2">
+           <div class="header-text">
+               
+               
+               <p>Hi I Am</p>
+               <h1><span>SAKSHI</span></h1>
+               <h5>FRONT-END DEVELOPER</h5>
+    
+    
+        </div>
+        
+        </div>
+
+    </div>
+   
+    </div>
+</div>
+<div class="main2">
+        <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="s1.jpg" alt="sakshu">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="pg"> I am a MCA student. I am intermediate in various programming languages including
+                        C,HTML,CSS,JS . I am confident that I have the skills and experience necessary to be a valuable
+                        asset to your team.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('SKILLS')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('PROJECTS')">PROJECTS</p>
+                        <p class="tab-links" onclick="opentab('EDUCATION')">EDUCATION</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="SKILLS">
+                        <ul>
+                            <li><span>Web Development</span><br> HTML,CSS AND JS</li>
+                            <li><span>C Programming</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="PROJECTS">
+                        <ul>
+                            <li><span>BANK MANAGEMENT SYSTEM</span><br>Technology used:C++<br>Role:Testing<br> Sep
+                                2022-Dec 2022</li>
+                            <li><span>PORTFOLIO</span><br>Portfolio Website</li>
+                            <li><span>Weather Map</span><br>Technology Used:HTML CSS JS<br>Dec 2023</li>
+                            <li><span>Calculator</span><br>Technology Used:HTML CSS JS<br> Nov 2023</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="EDUCATION">
+                        <ul>
+                            <li><span>MCA-Current</span><br>KIET GROUP OF INSTITUTION</li>
+                            <li><span>BCA</span><br>FUTURE GROUP OF INSTITUTION(BAREILLY)</li>
+                            <li><span>INTERMEDIATE</span><br>BRB MODEL SCHOOL<br>Physics,Chemistry,Mathematics</li>
+                            <li><span>HIGH SCHOOL</span><br>BRB MODEL SCHOOL</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!--------------------------services----------------------------->
+    <div class="main3">  
+          <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</div>
+                <div class="services-list">
+                   <div>
+                    <i class="fa-solid fa-code"></i>
+                       <h2>Web Design</h2>
+                       <p class="pg2" >Plan,create and code internet sites and web pages with modern and artful designs.</p>
+                       <a href="#">Learn more</a>
+                   </div>
+                   <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p class="pg2" >Specializations in creating clean,artful designs that are both intituitive and functional.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>APP Design</h2>
+                    <p  class="pg2">Mobile application developer with a great knowledge of java,Android and Reactjs.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+
+
+                </div>
+
+    </div>
+</div>
+
+    <!--------------contact------------------------>
+    <div class="main4">
+    <div id="contact">
+        <div class="container">
+            <div class="row1">
+                <div class="contact-left">
+                    <h1 class="subtitle"> Contact Me</h1>
+                    
+                    <p class="pg3"><i class="fa-solid fa-envelope-circle-check"></i>guptasakshi2002@gmail.com</p>
+                    
+                    <p  class="pg3"><i class="fa-solid fa-phone"></i>7409748852</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="Sakshi_resume_new.pdf"Download class="btn">Download Resume</a>
+                    </div>
+                </div>
+                    <div class="contact-right"></div>
+                  <form>
+                      <input type="text" name="Name" placeholder="Your Name"required>
+                      <input type="email" name="email" placeholder="Your Email"required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+  
+                  </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+     }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>
+</body>
+
+</html>
